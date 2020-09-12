@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: white;
+  float: right;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+	z-index: 100;
+}
+
+.topnav {
+  background-color: white;
+  float: right;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+	z-index: 100;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  height: 5%;
+  z-index: 1;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #2ec4b6;
+}
+
+.topnav a.active {
+	color: #2ec4b6;
+}
+
+.topnav ul li {
+	display: inline-block;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 350px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 2px 2px;
+	z-index: 2;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	margin-top: 50px;
+}
+
+#menu-logo {
+	padding-left: 80px;
+	z-index: 1;
+}
+
+.spacer {
+	margin-top: 40px;
+}
+
+body {
+	background-color: #eeeeee;
+}
+
+body h2 {
+	padding: 20px;
+}
+
+#author {
+	float: left;
+	margin: 20px;
+}
+
+body #headings #sites {
+	text-decoration: underline;
+	text-align: center;
+	padding-right: px;
+}
+
+body #main #pictures {
+	text-align: center;
+	padding-right: 150px;
+}
+body #main #pictures img {
+	padding: 30px;
+}
+
+body #main #pictures hr {
+	background-color: black;
+	width: 350px;
+}
+
+body #main #pictures button {
+	border-radius: 8px;
+	border: 0px;
+	padding: 8px 20px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #FDFFFC;	
+	background-color: #FF9F1C;
+}
+
+body #main #pictures button:hover {
+	border-radius: 8px;
+	border: 0px;
+	padding: 8px 20px;
+	text-decoration: none;
+	font-size: 17px;
+	color: #011627;
+}
+
+body #main {
+	padding-left: 20px;
+	padding-bottom: 40px;
+}
+
+body #main #poem {
+	font-family: calibri;
+	font-size: 20px;
+	line-height: 1.5;
+}
+
+body #main #ppoem {
+	float: right;
+}
+
+body #main #para {
+	font-size: 18px;
+}
+
+.page-footer {
+	margin: -15px;
+	color: #fdfffc;
+	background-color: #011627
+}
+
+.page-footer a:link {
+	color: #fdfffc;
+}	
