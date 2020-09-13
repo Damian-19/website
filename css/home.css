@@ -68,6 +68,14 @@ body::before {
 	display: inline-block;
 }
 
+/**********BODY***************/
+
+.body {
+	background-color: #FFFFFF;
+	color: #1a1a1a;
+	font-family: 'Nunito', sans-serif;
+}
+
 .buttonMain {
 	border-radius: 4px;
 	border: 0.5px;
@@ -79,14 +87,6 @@ body::before {
 	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	background-color: #209ebd;
-}
-
-#body1Main {
-	background-color: #FFFFFF;
-	border-radius: 6px;
-	color: #1a1a1a;
-	padding: 20px;
-	font-family: 'Nunito', sans-serif;
 }
 
 .page-footer {
