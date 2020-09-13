@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
 <title> Damian Larkin </title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -9,60 +10,33 @@
 </head>
 
 <body> 
-<!--<div id="topnav" class = "container-fluid">
-<div class="row" style="background-color: #121212">
-<div class="col-4">
-</div>
-<div class="col-6 text-center my-auto">
-<nav>
-<div class="topnav">
+<div class = "container-fluid topnav">
+<div class="row">
+	<div class="col-4">
+		<a class="brand" href="home.html">Damian Larkin</a>
+	</div>
+<div class="col-8 text-right">
 <ul>
 	<li><a class="active" href="home.html">Home</a></li>
-	<li><div class="dropdown">
-		<a href="">Books</a>
-			<div class="dropdown-content">
-				<a href="izzy1.html">Izzy's Magical Football Adventure</a>
-				<a href="izzy1.html"> Izzy's Magical Camogie Adventure</a>
-			</div>
-	</div></li>
 	<li><a href="about.html">About Me</a></li>
+	<li><a href="projects.html">Projects</a></li>
+	<li><button onClick="darkMode()">Toggle Dark Mode</button></li>
 </ul>
 </div>
-</nav>
-</div>
-</div>
-</div>-->
-<div id="main" class="container-fluid">
-<div class="row" style="background-color: #121212">
-<div class="col-2"></div>
-<div id="img-row" class="col-8">
-<img id="main-img" class=" img-fluid centre" src="images/150x150.png" alt="Placeholder"	 />
-</div>
-</div>
-<div class="row" style="background-color: #121212;">
-	<div class="col-2"></div>
-<div id="title-text" class="col-8  text-center">
-	<h1> Damian Larkin </h1>
-	<p style="font-size: 20px;">I'm a 20 year-old computer science student at the University of Limerick studying
-	a Bsc in Mobile Communications & Security.</p>
-	<button class="buttonMain text-uppercase" type="button"><b>My Projects</b></button>
 </div>
 </div>
 
-<div id="body1" class="row text-center">
-	<div class="col-12">
-		<p id="body1Main">
-			<span style="text-align: center; font-size: 35px;">About Me<br /></span>
-			I began my Undergraduate course in 2018, and have since studied the Java, C & PHP programming languages.
-			I have also used HTML & CSS to build my own website, along with PHP to manage a database attached to it.
-		</p>
-</div>
-</div>
+<script>
+	function darkMode() {
+		var element = document.body;
+		element.classList.toggle("title=dark-mode")
+	}
+</script>
+</body>
 
 <footer class="page-footer font-small">
   <div class="footer-copyright text-center py-3"> 
 	<h7>Copyright © 2020 Damian Larkin</h7>
   </div>
 </footer>
-</body>
 </html>

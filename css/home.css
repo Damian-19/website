@@ -1,122 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 /****************************
 * DEFAULT COLOURS
-* BackgroundMain: #121212
-* BackgroundSec: #1a1a1a
-* AccentMain: #209dbd
-* AccentMainHover: #1a819c
 */
 
-/* Add a black background color to the top navigation */
+body::before {
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+	z-index: 100;
+}
+
+body::before {
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+	z-index: 100;
+}
+
 .topnav {
-  background-color: #121212;
-  float: right;
-  font-family: 'ABeeZee', sans-serif;
-}
+	background-color: #2ab659;
+	font-family: 'Nunito', sans-serif;
+	padding: 25px 20px 25px 80px;
+  }
 
-body::before {
-	content: "";
-	position: fixed;
-	top: -10px;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-	z-index: 100;
-}
-
-body::before {
-	content: "";
-	position: fixed;
-	top: -10px;
-	left: 0;
-	width: 100%;
-	height: 10px;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-	z-index: 100;
-}
-
-/* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
   color: #FFFFFF;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 20px;
+  margin: 4px;
+  font-size: 17.5px;
   text-decoration: none;
-  font-size: 17px;
-  display: block;
-  height: 5%;
+  font-weight: 400;
   transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 }
 
-/* Change the color of links on hover */
+.topnav a.brand {
+	color: #FFFFFF;
+	text-align: center;
+	padding: 12px 20px;
+	margin: 4px;
+	font-size: 22px;
+	text-decoration: none;
+	font-weight: 700;
+	transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+}
+
 .topnav a:hover {
-  color: #209dbd;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .topnav a.active {
-	color: #209dbd;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 5.6px;
 }
 
 .topnav ul li {
 	display: inline-block;
-}
-
-.dropdown {
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #1a1a1a;
-	min-width: 350px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 2px 2px;
-	z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-	margin-top: 50px;
-	border-radius: 4px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-#main {
-	width: 100%;
-	height: 100px;
-	box-shadow: 3px 3px 3px #333;
-	position: relative;
-}
-
-#main-img {
-	padding: 10px;
-	border-bottom: 6px;
-}
-
-#img-row {
-	background-color: #1a1a1a;
-	padding: 20px;
-	z-index: 1;
-	margin-top: 20px;
-	border-radius: 6px 6px 0px 0px;
-}
-
-#title-text {
-	color: #ebebeb;
-	background-color: #1a1a1a;
-	border-radius: 0px 0px 6px 6px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	padding: 20px;
-	font-family: 'ABeeZee', sans-serif;
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-#title-text:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .buttonMain {
@@ -124,67 +73,26 @@ body::before {
 	border: 0.5px;
 	padding: 8px 20px;
 	text-decoration: none;
+	font-family: 'Nunito', sans-serif;
 	font-size: 17px;
 	color: #ebebeb;
 	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	background-color: #209dbd;
-}
-
-.buttonSec {
-	border-radius: 4px;
-	border: 0.5px;
-	padding: 8px 20px;
-	text-decoration: none;
-	font-size: 17px;
-	color: #111111;
-	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-	background-color: #FFFFFF;
-}
-
-.buttonMain:hover {
-	background-color: #1a819c;
-	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-.buttonSec:hover {
-	background-color: #dfdfdf;
-	 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-
-#body1 {
-	padding: 20px;
-	font-family: 'ABeeZee', sans-serif;
-	background-color: #121212;
-	color: #ebebeb;
+	background-color: #209ebd;
 }
 
 #body1Main {
-	background-color: #1a1a1a;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	background-color: #FFFFFF;
 	border-radius: 6px;
-	color: #ebebeb;
-	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-#body1Main:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-#body1 p {
+	color: #1a1a1a;
 	padding: 20px;
-	width: 70%;
-	margin: auto;
-	font-size: 18px;
-	color: #ebebeb;
+	font-family: 'Nunito', sans-serif;
 }
 
 .page-footer {
 	margin: -15px;
 	color: #ebebeb;
-	background-color: #121212;		
+	background-color: #1a1a1a;		
 }
 
 .centre {
