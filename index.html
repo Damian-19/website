@@ -10,7 +10,7 @@
 
 </head>
 
-<body onload="setStoredDarkMode(1); changeImg()"> 
+<body onload="setStoredDarkMode(1); loadImg()"> 
 <div id="topnav" class = "container-fluid topnav">
 <div class="row">
 	<div class="col-4">
@@ -31,7 +31,7 @@
 </div>
 
 <div class = "container">
-	<button class="buttonMain">My Projects </button>
+	<button class="buttonMain">My Projects</button>
 </div>
 <script language="javascript">
 	function darkMode() {
@@ -56,10 +56,16 @@
 	}
 
 function changeImg() {
-	if (localStorage.getItem(1) != undefined) {
+	if (localStorage.getItem(1) == 1) {
 		document.getElementById("change-img").src = "icons/light.png";
 	} else if (localStorage.getItem(1) == null) {
 		document.getElementById("change-img").src = "icons/dark.png";
+	}
+}
+
+function loadImg() {
+	if (localStorage.getItem(1) == 1) {
+		document.getElementById("change-img").src = "icons/light.png";
 	}
 }
 
