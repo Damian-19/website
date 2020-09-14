@@ -6,21 +6,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" href="css/home.css">
+<link rel="icon" href="icons/favicon.png">
 
 </head>
 
-<body onload="setStoredDarkMode(1)"> 
+<body onload="setStoredDarkMode(1); changeImg()"> 
 <div id="topnav" class = "container-fluid topnav">
 <div class="row">
 	<div class="col-4">
-		<a class="brand" href="home.html">Damian Larkin</a>
+		<a class="brand" href="index.html">Damian Larkin</a>
 	</div>
 <div class="col-8 text-right">
 <ul>
-	<li><a class="active" href="home.html">Home</a></li>
+	<li><a class="active" href="index.html">Home</a></li>
 	<li><a href="about.html">About Me</a></li>
 	<li><a href="projects.html">Projects</a></li>
-	<li><button  onclick="darkMode(); storeDarkMode()">Toggle Dark Mode</button></li>
+	<li><button class="toggle-btn" onclick="darkMode(); storeDarkMode()">
+			<img id="change-img" onclick="changeImg()" src="icons/light.png" />
+		</button>
+	</li>
 </ul>
 </div>
 </div>
@@ -50,6 +54,15 @@
 			document.getElementById("topnav").classList.add("nav-dark-mode");
 		}
 	}
+
+function changeImg() {
+	if (localStorage.getItem(1) != undefined) {
+		document.getElementById("change-img").src = "icons/light.png";
+	} else if (localStorage.getItem(1) == null) {
+		document.getElementById("change-img").src = "icons/dark.png";
+	}
+}
+
 </script>
 </body>
 
