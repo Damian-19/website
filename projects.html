@@ -18,9 +18,9 @@
 	</div>
 <div class="col-8 text-right">
 <ul>
-	<li><a class="active" href="index.html">Home</a></li>
+	<li><a href="index.html">Home</a></li>
 	<li><a href="about.html">About Me</a></li>
-	<li><a href="projects.html">Projects</a></li>
+	<li><a class="active" href="projects.html">Projects</a></li>
 	<li><button class="toggle-btn" onclick="darkMode(); storeDarkMode()">
 			<img id="change-img" onclick="changeImg()" src="icons/light.png" />
 		</button>
@@ -30,25 +30,7 @@
 </div>
 </div>
 
-<div class = "profile-main container-fluid">
-<div class="row">
-	<div class="col-8">
-		<h1 class="profile-heading">Hi, I'm Damian Larkin.</h1>
-		<p class="profile-intro">I'm a Computer Science student at the University of Limerick, specialising in
-			Mobile Communication & Security.
-		</p>
-		<div class="row">
-			<div class="col-12">
-				<button onclick="window.location.href='projects.html'"class="buttonMain">My Projects</button>
-				<button class="buttonSec">About Me</button>
-			</div>
-		</div>
-	</div>
-	<div class="col-4">
-		<img  class="profile-img img-fluid" src="images/300x300.png">
-	</div>
-	</div>
-</div>
+
 <script language="javascript">
 	function darkMode() {
 		document.body.classList.toggle("dark-mode")
