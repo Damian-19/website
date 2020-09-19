@@ -128,7 +128,7 @@ p {
 	font-size: 17px;
 	letter-spacing: 1.2px;
 	font-weight: 600;
-	color: #ebebeb;
+	color: #FFFFFF;
 	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
 	transition: all 0.15s cubic-bezier(.25,.8,.25,1);
 	background-color: #2ab659;
@@ -149,7 +149,7 @@ p {
 }
 
 .buttonMain:hover {
-	color: #dbdbdb;
+	color: #FFFFFF;
 	background-color: #229749;
 	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
@@ -157,7 +157,7 @@ p {
 }
 
 .buttonSec:hover {
-	color: #dbdbdb !important;
+	color: #FFFFFF !important;
 	background-color: #229749;
 	box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.2);
 	border: 0.5px solid #229749;
@@ -182,14 +182,14 @@ p {
 }
 
 .dark-mode .buttonMain:hover {
-	background-color: #1fdd5e;
+	background-color: #2dbd5d;
 	color: #FFFFFF;
 }
 
 .dark-mode .buttonSec:hover {
-	background-color: #1fdd5e;
+	background-color: #2dbd5d;
 	color: #FFFFFF;
-	border: 0.5px solid #1fdd5e;
+	border: 0.5px solid  #2dbd5d;
 }
 .nav-dark-mode {
 	background-color: #1a1a1a;
