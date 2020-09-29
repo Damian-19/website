@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/projects.css">
 <link rel="icon" href="icons/favicon.png">
+<script type="text/javascript" src="../js/dark-mode.js"></script>
 
 </head>
 
@@ -48,46 +49,6 @@
         </div>
     </div>
 </div>
-
-
-<script language="javascript">
-	function darkMode() {
-        document.getElementById("card").getElementsByClassName.toggle("card-dark");
-		document.body.classList.toggle("dark-mode")
-		document.getElementById("topnav").classList.toggle("nav-dark-mode");
-	}
-
-	function storeDarkMode() {
-		if (localStorage.getItem(1) == 1) {
-		localStorage.removeItem(1, 1);
-		} else if (localStorage.getItem(1) != 1) {
-			localStorage.setItem(1, 1);
-		}
-	}
-
-	function setStoredDarkMode(id) {
-		var value = localStorage.getItem(id);
-		if(value != undefined) {
-			document.getElementById("topnav").classList.add("nav-dark-mode");
-			document.body.classList.add("dark-mode");
-		}
-	}
-
-function changeImg() {
-	if (localStorage.getItem(1) == 1) {
-		document.getElementById("change-img").src = "icons/light.png";
-	} else if (localStorage.getItem(1) == null) {
-		document.getElementById("change-img").src = "icons/dark.png";
-	}
-}
-
-function loadImg() {
-	if (localStorage.getItem(1) == 1) {
-		document.getElementById("change-img").src = "icons/light.png";
-	}
-}
-
-</script>
 </body>
 
 <footer class="page-footer font-small fixed-bottom">
