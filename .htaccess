@@ -1,8 +1,19 @@
 RewriteEngine on
 RewriteBase /
+
+#enable ssl - shunt to https - display full url
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.damianlarkin.com/$1 [R,L]
 
+#302 from example.com/page.html to example.com/page
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=302,L]
+
 DirectoryIndex index.html
 
+#redirect about.html to index
+Redirect 302 "/about.html" "/"
+
+#error handling
 ErrorDocument 404 /error/404.html
+ErrorDocument 500 /error/500.html
