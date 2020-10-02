@@ -10,39 +10,46 @@
 
   		gtag('config', 'UA-179502497-1');
 	</script>
+	<noscript>Your browser either does not support, or has JavaScript</noscript>
+
 
 <meta charset="utf-8">
 <title> Damian Larkin </title>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="icon" href="icons/favicon.png">
 <script type="text/javascript" src="../js/dark-mode.js"></script>
 
 </head>
 
-<header>
-<div id="topnav" class = "container-fluid topnav navbar-nav">
-<div class="row">
-	<div class="col-4">
-		<a class="brand navbar-brand" href="/">Damian Larkin</a>
-	</div>
-<div class="col-8 text-right">
-<ul>
-	<li><a class="active" href="/">Home</a></li>
-	<li><a href="about.html">About Me</a></li>
-	<li><a href="projects.html">Projects</a></li>
-	<li><button class="toggle-btn" onclick="darkMode(); storeDarkMode()">
-			<img id="change-img" src="icons/light.png" />
+<nav class=" topnav navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="/">Damian Larkin</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav ml-auto">
+		<li class="nav-item active">
+		  <a class="nav-link" href="#">Home	</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="about.html">About Me</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="projects.html">Projects</a>
+		</li>
+		<li><button class="toggle-btn" onclick="darkMode(); storeDarkMode()">
+			<img id="change-img" onclick="changeImg()" src="icons/light.png" />
 		</button>
 	</li>
-</ul>
-</div>
-</div>
-</div>
-</header>
+	  </ul>
+	</div>
+  </nav>
 
 <body onload="setStoredDarkMode(1)"> 
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <div class = "profile-main container-fluid">
 <div class="row">
 	<div class="col-8">
@@ -52,8 +59,8 @@
 		</p>
 		<div class="row main-btns">
 			<div class="col-12">
-				<a href="projects.html" class="buttonMain">My Projects</a>
-				<a class="buttonSec">About Me</a>
+				<a href="projects.html" class="btn buttonMain">My Projects</a>
+				<a class="btn buttonSec">About Me</a>
 			</div>
 		</div>
 	</div>
