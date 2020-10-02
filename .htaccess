@@ -1,7 +1,7 @@
 RewriteEngine on
 RewriteBase /
 
-#enable ssl - shunt to https - display full url
+#enable ssl - redirect to https - display full url
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.damianlarkin.com/$1 [R,L]
 
