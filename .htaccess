@@ -12,7 +12,7 @@ RewriteRule ^(.*)\.html$ /$1 [R=302,L]
 DirectoryIndex index.html
 
 #redirect about.html to index
-Redirect 302 "/about.html" "/"
+Redirect 302 "about.html" "/"
 
 #error handling
 ErrorDocument 404 /error/404.html
