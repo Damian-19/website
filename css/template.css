@@ -178,8 +178,8 @@ p {
 	border: 0.5px solid  #2dbd5d;
 }
 .nav-dark-mode {
-	background-color: #1a1a1a;
-	color: #FFFFFF;
+	background-color: #1a1a1a !important;
+	color: #FFFFFF !important;
 	box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
 }
 
