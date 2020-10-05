@@ -46,6 +46,7 @@ body::before {
   text-decoration: none;
   font-weight: 400;
   transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+  outline: none;
 }
 
 .topnav a.brand {
