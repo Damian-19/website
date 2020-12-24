@@ -101,6 +101,7 @@ body::before {
 .profile-heading {
 	font-weight: 600;
 	font-size: 50px;
+	color: rgb(48, 48, 48);
 }
 
 .profile-intro {
