@@ -1,80 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179502497-1"></script>
-	<script>
-  		window.dataLayer = window.dataLayer || [];
-  		function gtag(){dataLayer.push(arguments);}
-  		gtag('js', new Date());
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Damian Larkin </title>
 
-  		gtag('config', 'UA-179502497-1');
-	</script>
-	<noscript>Your browser either does not support, or has JavaScript disabled.</noscript>
+    <!-- Bootstrap CSS -->
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"-->
 
+    <!--Imports-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/topnav.css">
+    <link rel="icon" href="icons/favicon.png">
+  </head>
 
-<meta charset="utf-8">
-<title> Damian Larkin </title>
-<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/home.css">
-<link rel="stylesheet" href="css/template.css">
-<link rel="icon" href="icons/favicon.png">
-<script type="text/javascript" src="../js/dark-mode.js"></script>
-
-</head>
-
-<nav id="topnav" class=" topnav navbar navbar-expand-lg">
-	<a class="navbar-brand" href="/">Damian Larkin</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	  <span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-	  <ul class="navbar-nav ml-auto">
-		<li class="nav-item active">
-		  <a class="nav-link" href="#">Home	</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="/">About Me</a>
-		</li>
-		<li class="nav-item">
-		  <a class="nav-link" href="projects.html">Projects</a>
-		</li>
-		<li><button class="toggle-btn" onclick="darkMode(); storeDarkMode()">
-			<img id="change-img" src="icons/light.png" />
-		</button>
-	</li>
-	  </ul>
-	</div>
+  <nav class="topnav navbar sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid pt-2 px-5 pb-2">
+      <a class="navbar-brand" href="index.html">Damian Larkin</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" href="/">About Me</a>
+          <a class="nav-link" href="projects.html">Projects</a>
+        </div>
+      </div>
+    </div>
   </nav>
+  <body class="bg-dark">
 
-<body onload="setStoredDarkMode(1)"> 
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<div class = "profile-main container-fluid">
-<div class="row">
-	<div class="col-8">
-		<h1 class="profile-heading">Hi, I'm Damian Larkin.</h1>
-		<p class="profile-intro">I'm a Computer Science student at the University of Limerick, specialising in
-			Mobile Communications & Security.
-		</p>
-		<div class="row main-btns">
-			<div class="col-12">
-				<a href="projects.html" class="btn buttonMain">My Projects</a>
-				<a class="btn buttonSec">About Me</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-4">
-		<img  class="profile-img img-fluid" style="width: auto; max-height: 320px;" src="images/300x300.png">
-	</div>
-	</div>
-</div>
-</body>
+  <div class="container-fluid h-auto">
+    <div class="card m-3 bg-dark border-0 align-items-center" style="margin-top:5em !important;">
+      <div class="row g-0 align-items-center">
+        <div class="col-md-8">
+          <div class="card-body">
+            <h1 class="fs-1 text-light">Hi, I'm Damian Larkin.</h1>
+            <p class=" fs-5 text-light">I'm a Computer Science student at the University of Limerick, specializing in
+              Mobile Communications & Security.
+            </p>
+            <div class="btn-toolbar" role="toolbar">
+              <div class="btn-group m-1" role="group">
+                <a class="btn btn-primary btn-lg" href="projects.html" role="button">My Projects</a>
+              </div>
+              <div class="btn-group m-1" role="group">
+                <a class="btn btn-outline-light btn-lg" href="#" role="button">About Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="images/300x300.png" alt="Profile Picture">
+        </div>
+      </div>
+    </div>
+    </div>
 
-<footer class="page-footer font-small fixed-bottom">
-  <div class="footer-copyright text-center py-3"> 
-	<h7>Copyright © 2021 Damian Larkin</h7>
-  </div>
-</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+  <footer class="page-footer font-small fixed-bottom">
+    <div class="footer-copyright text-center py-3"> 
+    <h7>Copyright © 2021 Damian Larkin</h7>
+    </div>
+  </footer>
 </html>
