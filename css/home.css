@@ -8,6 +8,11 @@ html {
 	line-height: 1.6;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+	height: 100%;
+}
+	
+body {
+	height: 100%;
 }
 
 h1,
